@@ -1,0 +1,17 @@
+{
+  "name": "sass-gulp-sample",
+  "version": "0.1.0",
+  "description": "A very simple sample for sass compile with gulp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-livereload": "^3.8.0",
+    "gulp-sass": "^2.0.4",
+    "gulp-webserver": "^0.9.1"
+  }
+}
