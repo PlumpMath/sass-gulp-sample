@@ -1,15 +1,13 @@
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
     webserver = require('gulp-webserver'),
-    livereload = require('gulp-livereload'),
-    sourcemaps = require('gulp-sourcemaps');
+    livereload = require('gulp-livereload');
 
 var src = 'src',
     dist = 'dist';
 
 var paths = {
-  scss: src + '/scss/*.scss',
-  scss: src + '/scss/**/*.scss'
+  scss: src + '/scss/*.scss'
 };
 
 // 웹서버를 localhost:8000 로 실행한다.
@@ -21,9 +19,7 @@ gulp.task('server', function () {
 // sass 파일을 css 로 컴파일한다.
 gulp.task('compile-sass', function () {
   return gulp.src(paths.scss)
-    .pipe(sourcemaps.init())
     .pipe(sass())
-    .pipe(sourcemaps.write())
     .pipe(gulp.dest(dist + '/css'));
 });
 
@@ -40,3 +36,4 @@ gulp.task('default', [
   'compile-sass',
   'watch'
 ]);
+
