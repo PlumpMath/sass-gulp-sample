@@ -9,5 +9,6 @@ You need livereload extension for your main browser.
 ```
 npm install -g gulp
 npm install
+npm install gulp-sourcemaps --save-dev
 gulp
 ```
